@@ -16,7 +16,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip==22.0.4
+          pip install --upgrade pip
+          python -m pip
           pip install -r requirements.txt
 
       - name: Lint with flake8
